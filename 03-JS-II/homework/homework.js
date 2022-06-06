@@ -31,6 +31,13 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  if(status===1){
+return 'Online'
+  }else if(status===2){
+return 'Away'
+  }else{
+  return'Offline'
+  }
 }
 
 function saludo(idioma) {
@@ -39,7 +46,21 @@ function saludo(idioma) {
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
-  // Tu código:
+  // Tu código
+  switch(idioma){
+ case 'aleman':
+ return 'Guten Tag!'
+ 
+ case 'mandarin':
+ return 'Ni Hao!'
+ 
+ case 'ingles':
+ return 'Hello!'
+ 
+ default:
+    return 'Hola!';
+    
+  }
 }
 
 function colors(color) {
@@ -109,7 +130,11 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  
+  for (i=0; i<=60; i++){
+
+
+    
+  }
 }
 
 function tieneTresDigitos(numero){
